@@ -7,13 +7,12 @@ import (
 // Celcius to Fahrenheit: (celcius * 9/5) + 32
 // Fahrenheit to Celcius: (fahrenheit - 32) * 5/9
 
-
 func celciusToFahrenheit(celcius float64) float64 {
-	return (celcius * 9/5) + 32
+	return (celcius * 9 / 5) + 32
 }
 
-func fahrenheitToCelcius(fahrenheit float64) float64{
-	return (fahrenheit - 32) * 5/9
+func fahrenheitToCelcius(fahrenheit float64) float64 {
+	return (fahrenheit - 32) * 5 / 9
 }
 
 func main() {
@@ -42,7 +41,7 @@ func main() {
 		return
 	}
 
-	switch choice{
+	switch choice {
 	case 1:
 		result := celciusToFahrenheit(temp)
 		fmt.Printf("%.2f degrees celcius = %.2f fahrenheit\n", temp, result)
